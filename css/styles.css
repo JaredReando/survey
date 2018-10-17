@@ -5,3 +5,15 @@ body {
 .large {
   font-size: 22pt;
 }
+
+.hidden {
+  display: none;
+}
+
+.loud {
+  font-size: 3em;
+}
+
+.row {
+  margin-top: 15px;
+}
