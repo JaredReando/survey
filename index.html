@@ -12,11 +12,18 @@
 
 <body>
   <div class="container">
-    <h1>Survey</h1>
+    <div class="jumbotron">
+      <h1>Survey</h1>
+    </div>
+
+    <!-- First survey row -->
+
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your name, friend?</div>
+          <div class="panel-heading">
+            <h2 class="panel-title large">What's your name, friend?</h2>
+          </div>
           <div class="panel-body">
             <div class="form-group">
               <label for="nameFirst">First Name:</label>
@@ -29,9 +36,11 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your favorite food?</div>
+          <div class="panel-heading">
+            <h2 class="panel-title large">What's your favorite food?</h2>
+          </div>
           <div class="panel-body">
             <div class="radio">
               <label>
@@ -46,10 +55,11 @@
           </div>
         </div>
       </div>
-
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your favorite music?</div>
+          <div class="panel-heading">
+            <h2 class="panel-title large">What's your favorite music?</h2>
+          </div>
           <div class="panel-body">
             <select class="form-control" id="music">
               <option>Coldplay</option>
@@ -61,58 +71,56 @@
         </div>
       </div>
     </div>
+
+    <!-- Second survey row -->
 
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your name, friend?</div>
+          <div class="panel-heading">
+            <h2 class="panel-title large">Favorite day (All Time)</h2>
+          </div>
           <div class="panel-body">
+
             <div class="form-group">
-              <label for="nameFirst">First Name:</label>
-              <input id="nameFirst" class="form-control" type="text">
+              <label for="favorite">Remeeeeember:</label>
+              <input id="favorite" class="form-control" type="date">
             </div>
-            <div class="form-group">
-              <label for="nameLast">Last Name:</label>
-              <input id="nameLast" class="form-control" type="text">
-            </div>
+
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your favorite food?</div>
+          <div class="panel-heading">
+            <h2 class="panel-title large">What's your least favorite color?</h2>
+          </div>
           <div class="panel-body">
-            <div class="radio">
-              <label>
-                <input type="radio" name="food" value="edible">
-                Edible
-              </label>
-              <label>
-                <input type="radio" name="food" value="watermelon">
-                Watermelon
-              </label>
+            <div class="form-group">
+              <input id="color" class="form-control" type="color">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="panel panel-default">
-          <div class="panel-heading">What's your favorite music?</div>
+          <div class="panel-heading">
+              <h2 class="panel-title large">Darkest secret:</h2>
+          </div>
           <div class="panel-body">
-            <select class="form-control" id="music">
-              <option>Coldplay</option>
-              <option>A Perfect Circle</option>
-              <option>Real life whale sounds</option>
-              <option>Headphones on but nothing playing</option>
-            </select>
+            <div class="form-group">
+              <label for="secret">CONFIDENTIAL...</label>
+              <textarea id="secret" class="form-control" rows='5'></textarea>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-danger" type="submit">Email Answers to USAToday</button>
       </div>
     </div>
-
-
-  </div>
 </body>
 
 </html>
